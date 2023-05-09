@@ -1,0 +1,307 @@
+/* CSS Reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables  */
+/* :root{
+    --navbar-height: 59px;
+} */
+
+/* .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
+
+/* For Smooth Scrolling within the page:  */
+html{
+    scroll-behavior: smooth;
+}
+
+#top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    /* vertical alignment in middle : */
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.421);
+    font-family: 'Baloo Tamma 2', cursive;
+    /* <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Bree+Serif&display=swap" rel="stylesheet"> */
+    /* For sticky position of Navbar on top : */
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation Bar : Logo and Image  */
+#logo{
+    /* Change in Browser Inspector Window and Set:  */
+    margin: 5px 35px;
+}
+
+#logo img{
+    margin: 3px 5px;
+    height: 50px;
+    border-radius: 20px;
+}
+/* Navigation Bar : List Items  */
+#links{
+    display: flex;
+    /* list-style: none; */
+}
+
+#links li{
+    list-style: none;
+    /* rem : root em 1.1 times root html  */
+    font-size: 1.2rem;
+}
+
+#links li a{
+    /* Give padding in a rather than li to get hover over complete area  */
+    padding: 5px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+#links li a:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.421);
+    /* change occurs gradually : */
+    transition: 1s;
+}
+
+/* Home Section  */
+#home-section{
+    display: flex;
+    padding: 5px 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-items:center;
+    justify-content: center;
+    
+    height: 100%;
+
+     /* Images available at:
+    https://www.pexels.com/
+    https://pixabay.com/ */
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/* 
+body{
+    Images available at:
+    https://www.pexels.com/
+    https://pixabay.com/ 
+     background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+ */
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 5px;
+    font-family: 'Bree Serif', serif;
+     /* <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Bree+Serif&display=swap" rel="stylesheet"> */
+    color: rgb(185, 4, 4);
+    
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 5px;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+hr{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(238, 122, 145);
+}
+
+
+/*
+ #home-section h1{
+    color: rgb(114, 7, 34);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+} 
+*/
+
+
+#home-section p{
+    color: rgb(111, 5, 80);
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 3px solid rgb(125, 29, 29);
+    background-color: rgb(254, 188, 107);
+    color: rgb(113, 57, 16);
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer; /* Button gets a hand pointer to Click */
+}
+
+/* Services section */
+#services-section{
+    background-color: bisque;
+}
+#services {
+    /* margin: 10px; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: rgb(241, 241, 241);
+}
+#services .box img{
+    height: 160px;
+    width: 180px;
+    border-radius: 20px;
+    /* To align the image in the center:  */
+    display: block;
+    margin: auto; 
+}
+#services .box p{
+    text-align:center; 
+    font-family: 'Bree Serif', serif;
+}
+/* Client Section */
+#client-section{
+    background-image: url(../images/bg3.jpg);
+    background-position: center;
+    height: 270px;
+}
+#clients {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* For responsive website on mobiles, extra content will be wrapped:  */
+    flex-wrap: wrap;
+}
+#clients img{
+   height: 120px;
+   border-radius: 10px;
+   /* width: 120px; */
+}
+.client-item{
+    padding: 20px;
+}
+
+
+/* Section Contact Us */
+#contact{
+    background-image: url(../images/bg4.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 520px;
+}
+/* 
+#contact-box{
+    Alternate of :- form 40% width and center align
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+*/
+#contact-box form{
+    width: 40%;
+    margin: auto;
+}
+#contact-box input, #contact-box textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    background-color: cornsilk;
+}
+#contact-box input[type=submit]{
+    cursor: pointer; /* Button gets a hand pointer to Click */
+    background-color: rgb(228, 129, 17);
+}
+#contact-box label{
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    margin: 5px;
+}
+
+/* Footer : */
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+}
+#footer img{
+    height: 30px;
+    padding: 1px''' 32px;
+}
+
+
+/* Pages : */
+
+/* Services Page  */
+#services-page {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services-page  .box{
+    width: 70%;
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    background-color: rgb(241, 241, 241);
+}
+#services-page  .box img{
+    height: 160px;
+    width: 180px;
+    border-radius: 20px;
+    /* To align the image in the center:  */
+    display: block;
+    margin: auto; 
+
+    
+}
+#services-page  .box p{
+    text-align:center; 
+    font-family: 'Bree Serif', serif;
+}
